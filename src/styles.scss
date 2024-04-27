@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(assets/bg-curve.svg) no-repeat 100% 0 / contain,
+      url(assets/bg-circle-g.svg) no-repeat -25% 100% / 50% 50%, #2148c0 !important;
+    min-height: 100vh;
+    align-content: center;
+  }
+
+  
+  .d-flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 20rem;
+  }
+  
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -8px;
+    text-align: right;
+    color: #ffffff;
+  }
+  
+  form {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inp-container {
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-left: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  .inp {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    padding: 12px 0;
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+  
+    &::placeholder {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #9dbaf7;
+    }
+  }
+  
+  .btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px 123px;
+    background: #ffffff;
+    border-radius: 4px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2148c0;
+    border: 1px solid transparent;
+    outline: none;
+    transition: all 0.5s;
+  
+    &:hover {
+      box-shadow: 0px 4px 4px #486ee5;
+      border: 1px solid #ffffff;
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  
+  body > p {
+    margin-top: 20px;
+    color: #9dbaf7;
+  }
+  
+  a {
+    color: rgb(236, 236, 236);
+  }
